@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Column Properties</title>
+    <style>
+        .main{
+            height: 100px;
+             /*  Column Properties 
+               column-count: no. of columns you want to display
+               column-gap: space between columns
+               column-fill: auto or balance   (auto will add the content according to height.)
+               column-rule: gives the border between columns.
+               column-width: width of the column.
+               column-span: all means the content will span across all the columns.
+             */
+             column-count: 3;
+             column-gap: 50px;
+             column-fill: auto;
+             column-rule: 5px solid red;  /* column rule gives the border between columns */
+             /* column-width: 300px;    column width work's only when column-count is off */
+        }
+        .h2{
+            column-span: none; /* column-span: all means the content will span across all the columns */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2 class="h2"> Welcome to WEb Development </h2>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam sequi possimus, 
+           iure ad, hic fuga placeat optio dolorem vel minima earum suscipit quo 
+           totam inventore odio natus quis recusandae.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam sequi possimus, 
+           iure ad, hic fuga placeat optio dolorem vel minima earum suscipit quo 
+           totam inventore odio natus quis recusandae.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam sequi possimus, 
+           iure ad, hic fuga placeat optio dolorem vel minima earum suscipit quo 
+           totam inventore odio natus quis recusandae.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quam sequi possimus, 
+           iure ad, hic fuga placeat optio dolorem vel minima earum suscipit quo 
+           totam inventore odio natus quis recusandae.
+     </div>
+</body>
+</html>

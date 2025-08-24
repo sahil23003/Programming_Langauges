@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Attributes</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <Legend> Form Attributes</Legend>
+                                                 <!-- Required Attribute-->              
+            Name: <input type="text" name=" name" required="" autofocus=""/>
+            &ensp;                                          <!-- Autofocus Atteibute-->
+            Last Name:<input type="tex" name="name" value="last name" readonly=""/>
+            <br/> <!-- Last Name is the example of readonly attributes-->
+            <br/>
+            Color: <input type="color" name="Color"/>
+              <br/>                     <!-- VAlue Attribute: for give an default value Like 'RED'-->
+              <br/>
+            Email:<input type="email" name="email" placeholder="example@gmail.com"/>
+              <br/>                           <!--Placeholder Attribute-->
+              <br/>
+            Phone Number:<input type="tel" name="phone" maxlength="10" value="91+"/>
+              <br/>                                 <!-- Maxlength Attribute-->
+              <br/>
+            Password:<input type="password" name="password"/>
+              <br/>
+              <br/>
+            Gender: <!-- Radio Button --> <!--checked atb-->
+               <input type="radio" name="gender" value="M"checked/> MALE
+              <input type="radio" name="gender" value="F"/>FEMALE
+              <input type="radio" name="gender" value="O"/>OTHER
+              <br/>
+              <br/>
+            Age:<input type="number" name="Age" min="18" max="35"/>
+              <br/>                        <!-- MIn and MAx attributes-->
+              <br/>
+            Hobbies:                   <!-- Checked Attribute :default checked use in checkbox and radio button-->
+              <input type="checkbox" name="Hobbies[]"checked=""/>Dancing
+              <input type="checkbox" name="Hobbies[]"/>Singing
+              <input type="checkbox" name="Hobbies[]"/>Musician
+              <br/>
+              <br/>
+            Experience:<!-- Range Attribute -->
+             <input type="range" name="year" min="1" max="25" value="10"/>
+             <br/>
+             <br/>
+             <input type="Submit" value="Send"/>
+             <input type="reset" value="Reset"/>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

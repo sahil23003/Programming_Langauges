@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Auto Suggestion on Web page using data List</title>
+</head>
+<body>
+    <form>
+       Courses: 
+        <input type="text" name="Courses"autofocus list="Course"/> <!-- List attribute is used to link the input field with the data list -->
+        <input type="submit" name=""/>
+        <input type="reset" name=""/>
+        <datalist id="Course">          <!--datalist id use to connect -->           
+            <option value="PHP">PHP</option>           <!-- Data List TAg to store the data -->
+            <option value="HTML">HTML</option>         <!-- Option Tag to add values-->
+            <option value="Laravel">Laravel</option>
+            <option value="Python">Python</option>
+        </datalist> 
+    </form>
+</body>
+</html>

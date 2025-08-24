@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+ <!--<h2> Enquiry From</h2> -->   <!--value to insert an default text--> <!--placeholder to an transparent text-->
+           <form>
+      <fieldset> <!-- filedset is use to group or border the form -->
+        <legend> Enquiry</legend>
+      Name:<input type="text" name="name" value=" Your Name" placeholder="full name"/>
+            <br/>
+            <br/>
+      Address:<textarea name="address"placeholder="Full address"></textarea>
+            <br/>
+            <br/>
+      Gender:  <!-- radio button-->
+                      <input type="radio" value="m" name="gender"/>Male
+                      <input type="radio" value="f" name="gender"/>Female
+                      <input type="radio" value="o" name="gender"/>Other
+             <br/>
+             <br/>
+      Country: <!-- select option -->
+             <select>
+              <option> Please Select </option>
+              <optgroup label="Asia">
+                 <option value="India">India</option>
+                 <option value="Pakistan">Pakistan</option>
+                 <option value="Bangladesh">Bangladesh</option>
+              </optgroup>
+             <optgroup label="Foreign">
+                 <option value="canada">Canada</option>
+                 <option value="USA">USA</option>
+             </optgroup>
+             </select>     
+             <br/>
+             <br/>
+        Hobbies: <!-- checkbox -->
+             <input type="checkbox" name="Hobbies[]"/>Dancing
+             <input type="checkbox" name="Hobbies[]"/>Singing
+             <input type="checkbox" name="Hobbies[]"/>Musician
+             <br/>
+             <br/>
+        Image: <!-- file input -->
+              <input type="file" name="image"/>     
+             <br/>
+             <br/>
+        <input type="submit" value="send"/><!-- Value is used to submit  inserted a text-->
+        <input type="reset" value=" reset"/><!-- Value is used to reset inserted a text-->
+  </fieldset>  
+      </form>
+</body>
+</html>

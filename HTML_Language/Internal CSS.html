@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal CSS Properties</title>
+    
+    <style> /* Internal CSS */              
+         .main{
+                width: 500px;            /* Width Property*/
+                height: 500px;           /* Height Property*/
+                background-color: red; /* Background Color Property*/
+              }
+        #parent-row-1{                  /* ID Selector */
+            width: 500px;
+            height: 250px;
+            background-color: blue;
+        }
+         #parent-row-2{                   
+            width: 500px;
+            height: 250px;
+            background-color: yellow;
+        }
+        .col1{                          /* Class Selector */
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            float: left;
+            
+        }
+        .col2{
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+            float: right;
+        }
+        .col3{
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: aqua;
+        }
+        .col4{
+            width: 250px;
+            height: 250px;
+            float: left;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h3> INTERNAL CSS PROPERTIES</h3>
+    <div class="main"> <!-- Main Div -->
+          
+        <div id="parent-row-1"> <!-- Parent Div Row 1 -->
+             <div class="col1" > <!-- Child Div Col 1 -->
+                Home
+             </div>
+             <div class="col2"> <!-- Child DIv Col 2 --> 
+                About
+            </div> 
+
+        </div> <!-- Parent Div Row 1 Close -->
+
+        <div id="parent-row-2"> <!-- Parent Div Row 2 -->
+            <div class="col3"> <!-- Child Div Col 3 -->
+                Course
+            </div>
+            <div class="col4"> <!-- Child Div Col 4 -->
+                Contact
+            </div>
+        </div><!-- Parent Div Row 2  Close-->
+
+    </div> <!-- Main Div Close -->
+</body>
+</html>
